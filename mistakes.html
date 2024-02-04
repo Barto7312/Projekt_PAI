@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body id = "ex-body">
+    <main id="ex-main" class="main">
+
+        <h1 id="ex-title" class="title"></h1>
+
+        <div id="page-counter"> </div>
+
+        <p id = "ex-word">word</p>
+        <ul id ="answers">
+            <li><button id="0" onclick="selectAns(this.id)"></button></li>
+            <li><button id="1" onclick="selectAns(this.id)"></button></li>
+            <li><button id="2" onclick="selectAns(this.id)"></button></li>
+            <li><button id="3" onclick="selectAns(this.id)"></button></li>
+        </ul>
+
+        <button id="ex-check" onclick="checkAns(selectedAns, correctAnsPosGlobal)">Sprawdz</button>
+
+        <div id = "ex-nav">
+            <a class = "return-button" href = "/">Zakończ</a>
+        </div>
+        
+    </main>
+
+    <div id = "popup">
+        <h2 id = "popup-header">Ukończone</h2>
+        <a class = "return-button" href="/">Zamknij</a>
+    </div>
+
+    <div id="error-popup">
+        <h2>Błędna odpowiedź</h2>
+        <button onclick="hideError()">Ok</button>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="database.js"></script>
+    <script src="mistakes.js"></script>
+</body>
+</html>

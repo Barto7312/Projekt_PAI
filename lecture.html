@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Language Quiz - Lecture</title>
+</head>
+<body id="lecture-body">
+    <main id = "lecture-main" class="main">
+
+        <h1 id = "lecture-title" class="title"></h1>
+
+        <div id="page-counter"></div>
+
+        <div id = "lecture-content">
+            <div id = "lecture-words">
+                <div class="lecture-word" id = "lecture-word-pl">
+                </div>
+                <div class="lecture-word" id = "lecture-word">
+                </div>
+
+                <button id = "lecture-next-word" onclick="changePage();lecture(database[subject],databasePl[subject + 'Pl'])">Następne słowo</button>
+            </div>
+        </div>
+
+        <div id = "lecture-nav">
+            <a class = "return-button" href = "/">Zakończ</a>
+        </div>
+
+    </main>
+
+    <div id = "popup">
+        <h2>Ukończone</h2>
+        <a class = "return-button" href="/">Zamknij</a>
+    </div>
+
+    <script src="database.js"></script>
+    <script src="index.html"></script>
+    <script src="lecture.js"></script>
+</body>
+</html>

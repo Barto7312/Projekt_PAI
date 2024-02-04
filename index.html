@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Quiz</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body id="index-body">
+
+    <nav>
+
+        <h1>Language Quiz</h1>
+
+        <ul id="menu-nav">
+            <li class="nav-button" id="active"> <a href="index.html">TEMATY</a></li>
+            <li class="nav-button"> <a href="dictionary.html">SŁOWNIK</a></li>
+            <li class="nav-button"> <a onclick="changeSubject('mistakes')" href="mistakes.html">BŁĘDY</a></li>
+        </ul>
+        
+    </nav>
+
+    <main class="menu">
+
+        <h1 id="menu-title">Tematy</h1>
+
+        <ul id="subjects-list">
+
+            <li class="subject-window">
+
+                <ul class="subject">
+
+                    <li class="subject-title">
+                        <h3>Owoce</h3>
+                    </li>
+                    <li class="subject-content">
+                        <a onclick="changeSubject('fruits')" href="lecture.html">Wykład</a>
+                    </li>
+                    <li class="subject-content">
+                        <a  onclick="changeSubject('fruits')" href="excercise.html">Ćwiczenia</a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class="subject-window">
+
+                <ul class="subject">
+
+                    <li class="subject-title">
+                        <h3>Zwierzęta</h3>
+                    </li>
+                    <li class="subject-content">
+                        <a onclick="changeSubject('animals')" href="lecture.html">Wykład</a>
+                    </li>
+
+                    <li class="subject-content">
+                        <a onclick="changeSubject('animals')" href="excercise.html">Ćwiczenia</a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li class="subject-window">
+
+                <ul class="subject">
+
+                    <li class="subject-title">
+                        <h3>Warzywa</h3>
+                    </li>
+                    <li class="subject-content">
+                        <a onclick="changeSubject('vegetables')" href="lecture.html">Wykład</a>
+                    </li>
+                    <li class="subject-content">
+                        <a onclick="changeSubject('vegetables')" href="excercise.html">Ćwiczenia</a>
+                    </li>
+
+                </ul>
+
+            </li>
+            
+            <li class="subject-window">
+
+                <ul class="subject">
+
+                    <li class="subject-title">
+                        <h3>Zawody</h3>
+                    </li>
+                    <li class="subject-content">
+                        <a onclick="changeSubject('proffesions')" href="lecture.html">Wykład</a>
+                    </li>
+                    <li class="subject-content">
+                        <a onclick="changeSubject('proffesions')" href="excercise.html">Ćwiczenia</a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+
+        
+        </ul>
+    </main>
+    <script src="database.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
